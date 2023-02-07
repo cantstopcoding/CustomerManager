@@ -17,4 +17,15 @@ public class Customer implements Serializable {
     private String imageUrl;
     @Column(nullable = false)
     private String customerCode;
+
+    public Customer() {}
+
+    public Customer(String name, String email, String jobTitle, String phone, String imageUrl, String customerCode) {
+        this.name = name;
+        this.email = email;
+        this.jobTitle = jobTitle;
+        this.phone = phone;
+        this.imageUrl = imageUrl;
+        this.customerCode = customerCode;
+    }
 }
